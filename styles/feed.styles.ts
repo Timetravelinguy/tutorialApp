@@ -1,6 +1,6 @@
 import { COLORS } from "@/constants/themes"
 import { Dimensions, Platform, StyleSheet} from "react-native"
-const { widht } = Dimensions.get("window");
+const { width } = Dimensions.get("window");
 
 
 export const styles = StyleSheet.create({
@@ -82,8 +82,8 @@ export const styles = StyleSheet.create({
         color:COLORS.white,
     },
     postImage:{
-        width:widht,
-        height:widht,
+        width:width,
+        height:width,
     },
     postActions: {
         flexDirection:"row",
