@@ -63,3 +63,4 @@ export async function getAuthenticatedUser(ctx:QueryCtx | MutationCtx) {
 
     return currentUser
 }
+
