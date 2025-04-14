@@ -3,9 +3,8 @@ import InitialLayout from "@/components/InitialLayout";
 import ClerkandConvexProvider from "@/providers/ClerkandConvexProvider";
 import { SplashScreen } from "expo-router";
 import {useFonts} from "expo-font"
-import { useCallback, useEffect } from "react";
-import * as NavigationBar from "expo-navigation-bar";
-import { Platform } from "react-native";
+import { useCallback } from "react";
+
 SplashScreen.preventAutoHideAsync();
 
 
@@ -18,12 +17,7 @@ const onLayoutRootView = useCallback(async()=>{
   if(fontsLoaded) SplashScreen.hideAsync()
 },[fontsLoaded]);
 
-useEffect(()=> {
-  if(Platform.OS === "android") {
-    NavigationBar.setBackgroundColorAsync("#000000");
-    NavigationBar.setButtonStyleAsync("light");
-  }
-}, []);
+
 
   return( 
     <ClerkandConvexProvider>
